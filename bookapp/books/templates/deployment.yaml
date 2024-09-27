@@ -37,14 +37,6 @@ spec:
             - name: http
               containerPort: 8000
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /books/metrics
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /books/metrics
-              port: http
           resources:
             {}
           volumeMounts:
