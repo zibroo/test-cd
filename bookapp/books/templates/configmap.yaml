@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 data:
   .env: |
-    POSTGRES_USER=dGUOrGM
+    POSTGRES_USER=postgres
     POSTGRES_PASSWORD=LtqRc26Q2LQy!7IZ
     POSTGRES_DB=VgqxCKa
     POSTGRES_HOST=prod-rds.cpaayg42c6kh.us-east-1.rds.amazonaws.com:5432
