@@ -29,7 +29,7 @@ spec:
         - name: books
           securityContext:
             {}
-          image: "tntk/prod/books:temptag"
+          image: "/prod/books:4dfd1de8"
           imagePullPolicy: IfNotPresent
           command: ["/bin/bash", "-c"]
           args: ["alembic upgrade head && uvicorn books.main:app --host 0.0.0.0 --port 8000 --reload"]
