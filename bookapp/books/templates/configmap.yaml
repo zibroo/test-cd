@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 data:
-  .env |
+  .env: |
     POSTGRES_USER=MnkeWeH
     POSTGRES_PASSWORD=wneQbNo1cRgVqVH8
     POSTGRES_DB=StEnYwQ
