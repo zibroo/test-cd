@@ -1,0 +1,25 @@
+---
+# Source: books/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bookapp-configmap
+  labels:
+    helm.sh/chart: books-0.1.0
+    app.kubernetes.io/name: books
+    app.kubernetes.io/instance: bookapp
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+data:
+  .env |
+    POSTGRES_USER=OgGmjqB
+    POSTGRES_PASSWORD=isKrjI1ld!iFPDSV
+    POSTGRES_DB=DYPlrmq
+    POSTGRES_HOST=prod-rds.che4m8we0q1z.us-east-1.rds.amazonaws.com:5432
+    DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+    POSTGRES_PORT=5432
+    REDIS_HOST=prod-redis.tzkgb7.0001.use1.cache.amazonaws.com
+    RABBITMQ_HOST=temphost
+    RABBITMQ_USERNAME=nFocdmz
+    RABBITMQ_PASSWORD=#g92NdkUbcR9iSqh
+    SECRET_KEY=8fd798253753e356792324ceffb6f9c3d3561d9c471d5ad1edc3e99db4f83372
