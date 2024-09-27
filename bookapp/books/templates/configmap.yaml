@@ -22,4 +22,3 @@ data:
     RABBITMQ_HOST=temphost
     RABBITMQ_USERNAME=fmSXnNS
     RABBITMQ_PASSWORD=bKd3Tcq54ugHefjP
-    SECRET_KEY=
