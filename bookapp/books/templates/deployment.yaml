@@ -29,10 +29,10 @@ spec:
         - name: books
           securityContext:
             {}
-          image: "211125742098.dkr.ecr.us-east-1.amazonaws.com/prod/books:c3536b14"
+          image: "211125568316.dkr.ecr.us-east-1.amazonaws.com/prod/books:7c84070e"
           imagePullPolicy: IfNotPresent
           command: ["/bin/bash", "-c"]
-          args: ["export SECRET_KEY=$(openssl rand -hex 32) && alembic upgrade head && uvicorn books.main:app --host 0.0.0.0 --port 8000 --reload"]
+          args: ["SECRET_KEY=$(openssl rand -hex 32)","alembic upgrade head && uvicorn books.main:app --host 0.0.0.0 --port 8000 --reload"]
           ports:
             - name: http
               containerPort: 8000
