@@ -14,12 +14,12 @@ data:
   .env: |
     POSTGRES_USER=dGUOrGM
     POSTGRES_PASSWORD=3feLKvJf}3y[9ked49{N|Rzx*TO-
-    POSTGRES_DB=VgqxCKa
+    POSTGRES_DB=arn:aws:secretsmanager:us-east-1:211125742098:secret:rds!db-2cde0a15-ee2e-429f-aaf4-0994662746c2-LDrgI3
     POSTGRES_HOST=prod-rds.cpaayg42c6kh.us-east-1.rds.amazonaws.com:5432
     DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}
     POSTGRES_PORT=5432
     REDIS_HOST=prod-redis.kepsmd.0001.use1.cache.amazonaws.com:6379
-    RABBITMQ_HOST=arn:aws:mq:us-east-1:628205245099:broker:broker:b-8dace556-4424-4896-8493-8fbda783b3be
-    RABBITMQ_USERNAME=broker
-    RABBITMQ_PASSWORD=broker123456
-    SECRET_KEY=6821c553f7011806b1c761225355d9848f405040855ec89f85a35f0e3b08941e
+    RABBITMQ_HOST=temphost
+    RABBITMQ_USERNAME=fmSXnNS
+    RABBITMQ_PASSWORD=bKd3Tcq54ugHefjP
+    SECRET_KEY=7a95479c5926d5b2a7e755c7c410e71f417d6d692f1a608853abc05df81e5d7d
