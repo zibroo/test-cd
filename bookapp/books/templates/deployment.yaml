@@ -29,7 +29,7 @@ spec:
         - name: books
           securityContext:
             {}
-          image: "533267333644.dkr.ecr.us-east-1.amazonaws.com/prod/books:a222fe65"
+          image: "767398066659.dkr.ecr.us-east-1.amazonaws.com/prod/books:595d0829"
           imagePullPolicy: IfNotPresent
           command: ["/bin/bash", "-c"]
           args: ["alembic upgrade head && uvicorn books.main:app --host 0.0.0.0 --port 8000 --reload"]

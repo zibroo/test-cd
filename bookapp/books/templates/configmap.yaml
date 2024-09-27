@@ -12,14 +12,14 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 data:
   .env |
-    POSTGRES_USER=OgGmjqB
-    POSTGRES_PASSWORD=isKrjI1ld!iFPDSV
-    POSTGRES_DB=DYPlrmq
-    POSTGRES_HOST=prod-rds.che4m8we0q1z.us-east-1.rds.amazonaws.com:5432
+    POSTGRES_USER=MnkeWeH
+    POSTGRES_PASSWORD=wneQbNo1cRgVqVH8
+    POSTGRES_DB=StEnYwQ
+    POSTGRES_HOST=prod-rds.cfgoy6aw8ugp.us-east-1.rds.amazonaws.com:5432
     DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
     POSTGRES_PORT=5432
-    REDIS_HOST=prod-redis.tzkgb7.0001.use1.cache.amazonaws.com
+    REDIS_HOST=prod-redis.qfahfk.0001.use1.cache.amazonaws.com
     RABBITMQ_HOST=temphost
-    RABBITMQ_USERNAME=nFocdmz
-    RABBITMQ_PASSWORD=#g92NdkUbcR9iSqh
-    SECRET_KEY=e27b665f04c450d8b2ca7b77deb7eb96eaac9823cb25beb5dba16b2222ba2c5f
+    RABBITMQ_USERNAME=JVfNrrL
+    RABBITMQ_PASSWORD=g6!WE7o2DCC3tNqy
+    SECRET_KEY=9e9a1bdbc00da7781aca9139e72a994f3023e13ca284e9d24ca93c430e5a7644
