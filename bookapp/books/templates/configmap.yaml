@@ -13,7 +13,7 @@ metadata:
 data:
   .env: |
     POSTGRES_USER=dGUOrGM
-    POSTGRES_PASSWORD=LtqRc26Q2LQy!7IZ
+    POSTGRES_PASSWORD=3feLKvJf}3y[9ked49{N|Rzx*TO-
     POSTGRES_DB=VgqxCKa
     POSTGRES_HOST=prod-rds.cpaayg42c6kh.us-east-1.rds.amazonaws.com:5432
     DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}
