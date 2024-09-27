@@ -12,11 +12,11 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 data:
   .env: |
-    POSTGRES_USER=postgres
+    POSTGRES_USER=dGUOrGM
     POSTGRES_PASSWORD=LtqRc26Q2LQy!7IZ
     POSTGRES_DB=VgqxCKa
-    POSTGRES_HOST=prod-rds.cpaayg42c6kh.us-east-1.rds.amazonaws.com:5432
-    DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}
+    POSTGRES_HOST=prod-rds.cpaayg42c6kh.us-east-1.rds.amazonaws.com
+    DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
     POSTGRES_PORT=5432
     REDIS_HOST=prod-redis.kepsmd.0001.use1.cache.amazonaws.com:6379
     RABBITMQ_HOST=temphost
