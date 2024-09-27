@@ -1,12 +1,12 @@
 ---
-# Source: books/templates/service.yaml
+# Source: bookapp/charts/ui/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: books
+  name: ui
   labels:
-    helm.sh/chart: books-0.1.0
-    app.kubernetes.io/name: books
+    helm.sh/chart: ui-0.1.0
+    app.kubernetes.io/name: ui
     app.kubernetes.io/instance: bookapp
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
@@ -14,9 +14,9 @@ spec:
   type: ClusterIP
   ports:
     - port: 80
-      targetPort: 8000
+      targetPort: http
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: books
+    app.kubernetes.io/name: ui
     app.kubernetes.io/instance: bookapp

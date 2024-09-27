@@ -1,12 +1,12 @@
 ---
-# Source: books/templates/tests/test-connection.yaml
+# Source: bookapp/charts/ui/templates/tests/test-connection.yaml
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "books-test-connection"
+  name: "ui-test-connection"
   labels:
-    helm.sh/chart: books-0.1.0
-    app.kubernetes.io/name: books
+    helm.sh/chart: ui-0.1.0
+    app.kubernetes.io/name: ui
     app.kubernetes.io/instance: bookapp
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
@@ -17,5 +17,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['books:80']
+      args: ['ui:80']
   restartPolicy: Never
